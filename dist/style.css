@@ -1,0 +1,82 @@
+body{
+	font-family: 'Courier', sans-serif;
+	color: #fff;
+	background-color: #000;
+}
+
+.text{
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+.text .content{
+	display: inline;
+}
+.text .cursor{
+	display: inline-block;
+	font-weight: bolder;
+	
+	-webkit-animation: blink .5s infinite linear;
+	
+	        animation: blink .5s infinite linear;
+}
+
+@-webkit-keyframes blink{
+	0%{
+		opacity: 1;
+	}
+	99%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes blink{
+	0%{
+		opacity: 1;
+	}
+	99%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.tooltip__content {
+	color: rgb(139, 255, 245)!important;
+}
+
+@media only screen and (min-width: 900px){
+	.text {
+		font-size: 72px!important;
+	}
+	.codrops-header {
+		font-size: 24px;
+	}
+	body {
+		font-size: 1.2em;
+	}
+}
+
+.tooltip__letters {
+	text-align: left!important;
+}
+
+img {
+	height: 200px!important;
+	width: 200px!important;
+}
+
+.text {
+	position: absolute;
+	left: 0px;
+	padding-bottom: 100px;	
+}
